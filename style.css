@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#222;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:white;
+}
+
+#board{
+    width:640px;
+    height:640px;
+
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    border:8px solid #654321;
+}
+
+.square{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:50px;
+    cursor:pointer;
+}
+
+.white{
+    background:#f0d9b5;
+}
+
+.black{
+    background:#b58863;
+}
+
+.status{
+    margin-top:20px;
+    color:white;
+    font-size:24px;
+}
